@@ -22,11 +22,13 @@
 
 <script>
 import Table from "../components/transactions components/Table.vue";
+
 export default {
   name: "Transactions",
   components: {
     Table
-  }
+  },
+  methods: {}
 };
 </script>
 

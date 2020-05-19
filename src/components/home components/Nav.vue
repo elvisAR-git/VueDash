@@ -1,7 +1,7 @@
 <template>
-  <v-nav>
+  <v-container>
     <v-app-bar app>
-      <v-btn flat depressed large v-on:click="toggleNav">
+      <v-btn text depressed large v-on:click="toggleNav">
         <v-icon>menu</v-icon>
       </v-btn>
       <h2>
@@ -16,7 +16,7 @@
     </v-app-bar>
     <v-navigation-drawer app class="grey lighten-4" v-model="drawer">
       <v-list dense nav class="py-0">
-        <v-list-item two-line :class="miniVariant && 'px-0'">
+        <v-list-item two-line>
           <v-list-item-avatar>
             <img src="https://randomuser.me/api/portraits/men/81.jpg" />
           </v-list-item-avatar>
@@ -38,7 +38,7 @@
         </v-list>
       </v-list>
     </v-navigation-drawer>
-  </v-nav>
+  </v-container>
 </template>
 
 <script>
